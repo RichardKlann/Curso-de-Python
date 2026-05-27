@@ -64,6 +64,8 @@ del(pessoa) - posso apagar uma tupla (única coisa possível)
 
 
 
+
+
 #AULA 17 - VARIÁVEIS COMPOSTAS - LISTAS (PARTE 1)
 '''
 MUITO SIMILAR AS TUPLAS, PORÉM AS LISTAS PODEM SER MODIFICADAS.
@@ -129,6 +131,11 @@ b = a[:] -> Apenas uma cópia dos valores de A
 '''
 
 
+
+
+
+
+
 #AULA 18 - LISTAS (PARTE 2) - VARIÁVEIS COMPOSTAS (LISTAS)
 '''
 Colocar listas dentro de listas
@@ -168,6 +175,12 @@ for p in galera:
 
 print(f'Temos {totmai} maiores de idade e {totmen} menores de idade.')
 '''
+
+
+
+
+
+
 
 #AULA 19 - DICIONÁRIOS (VARIÁVEIS COMPOSTAS)
 '''
@@ -230,6 +243,12 @@ PARA ORDERNAR UM DICIONÁRIO
 - usar a função sorted(dicionário.items(), key=itemgetter(número da coluna que contém o que quero ordenar))
 '''
 
+
+
+
+
+
+
 #AULA 20 - FUNÇÕES (PARTE 1)
 '''
 Função = rotina - uma coisa que você faz constantemente.
@@ -273,6 +292,13 @@ Caso necessário utilizar a função sleep sem que ela esteja bufferizando
 necessário utilizar o comando 
 print(num, flush=True)
 '''
+
+
+
+
+
+
+
 
 #AULA 21 - FUNÇÕES (PARTE 2)
 '''

@@ -56,7 +56,7 @@ print ('A raiz quadrada de {:.0f} é {:.0f}'.format(num, ceil(raiz)))
 
 
 
-#Desafio 19
+#DESAFIO 19
 '''
 lista = [n1, n2, n3, n...] - Serve para criar uma lista, ou um vetor em programação
 '''
@@ -114,6 +114,9 @@ print("""COLOQUE UM TEXTO GRANDE""") - Vai ser escrito o texto todo
 [2] - irá selecionar apenas a palavra Vídeo para printar
 [3] - irá printar somente o quarto caractere da palavra antes escolhida
 '''
+
+
+
 
 #FORMATAÇÃO DE STRINGS
 '''
@@ -181,6 +184,9 @@ for nome, idade in dados:
 '''
 
 
+
+
+
 #AULA 10 - CONDIÇÕES (PARTE 1)
 '''
 if carro.esquerda(): #identação para condicional se
@@ -218,6 +224,11 @@ if media < 7:
 else:
     print('Parabéns, você foi aprovado!')
 '''
+
+
+
+
+
 
 #AULA 11 - CORES NO TERMINAL
 '''

@@ -21,6 +21,11 @@ else:
 print('Tenha um bom dia, {}!'.format(nome))
 '''
 
+
+
+
+
+
 #AULA 13 - ESTRUTURA DE REPETIÇÃO FOR
 '''
 LAÇOS DE REPETIÇÃO - PARTE 1
