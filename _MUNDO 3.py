@@ -352,3 +352,39 @@ r3 = somar(4)
 
 print(f'Meus cálculos deram {r1}, {r2} e {r3}.')
 '''
+
+
+#AULA 22 - MÓDULOS E PACOTES
+'''
+MODULARIZAÇÃO:
+Conforme os programas foram ficando maiores, houve a necessidade da modularização, ou seja particionar o programa todo em pequenos pedaços de códigos, conseguindo assim uma melhor visualização do código e organização.
+
+- Sistemas ficando cada vez maiores
+- Foco: Dividir um programa grande
+- Foco: Aumentar a legibilidade
+- Foco: Facilitar a manutenção do código
+
+Criar um próprio módulo (biblioteca) que pode ser chamada utilizando o comando:
+import "biblioteca" - Sem aspas.
+
+VANTAGENS DA MODULARIZAÇÃO:
+- Organização do código
+- Facilita a manutenção do código
+- Ocultação do código detalhado
+- Reutilização em outros projetos
+
+
+
+PACOTES
+Definição: Uma pasta que contém módulos, caso os módulos ficarem muito grandes...
+
+Dentro do pacote ter um arquivo de funções somente para tratamento de números, em outro somente para tratamento de strings, Funções compatíveis com datas, e outras que podem ser para tratamento de cores...
+
+Dentro de um arquivo .py qualquer arquivo pode ser feito um módulo.
+Jogando esses arquivos dentro de uma pasta, essa pasta pode ser considerada um pacote.
+
+Posso colocar um arquivo especial dentro de cada pasta de pacote:
+__init__.py
+
+Dentro do __init__.py é onde devo de colocar todo o código relacionado aos módulos.
+'''
