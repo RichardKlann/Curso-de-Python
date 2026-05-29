@@ -1,9 +1,9 @@
 def aumentar(preço, taxa):
     res = preço + preço*taxa/100
-    return preço
+    return res
 
 def diminuir(preço, taxa):
-    res -= preço - preço*taxa/100
+    res = preço - preço*taxa/100
     return res
 
 

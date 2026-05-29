@@ -388,3 +388,10 @@ __init__.py
 
 Dentro do __init__.py é onde devo de colocar todo o código relacionado aos módulos.
 '''
+
+
+'''
+SUBSTITUIÇÃO DE CARACTERES DE UMA STRING
+Caso eu querer substituir algum caractere de uma string usar o comando .replace
+print(f'{valor}'.replace('.', ','))
+'''
