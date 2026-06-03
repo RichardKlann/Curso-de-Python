@@ -24,5 +24,4 @@ def leiaInt(texto):
 
 #Programa principal
 n = leiaInt('Digite um número: ')
-leiaInt()
 print(f'Você acabou de digitar o número {n}')
