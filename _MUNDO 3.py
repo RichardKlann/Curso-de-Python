@@ -395,3 +395,31 @@ SUBSTITUIÇÃO DE CARACTERES DE UMA STRING
 Caso eu querer substituir algum caractere de uma string usar o comando .replace
 print(f'{valor}'.replace('.', ','))
 '''
+
+
+
+#AULA 23 - TRATAMENTO DE ERROS E EXCEÇÕES
+'''
+try:                    #Tente
+    a = int(input('Numerador: '))
+    b = int(input('Denominador: '))
+    r = a / b
+except Exception as erro:                 #Se der falha vai executar isso.
+    print(f'Problema encontrado foi {erro.__class__}')
+else:                   #Se der certo, vai executar isso.
+    print(f'O resultado é {r}')
+finally:                #Para encerrar será executado isso, indiferente de certo ou errado
+    print('Volte sempre, muito obrigado!')    
+
+
+Um mesmo comando try, pode ter vários comandos excepts
+try:
+except TypeError:
+except ValueError:
+except OSError:
+else:
+finally:
+
+try:
+except (ValueError, TypeError)
+'''
