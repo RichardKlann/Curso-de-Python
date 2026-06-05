@@ -6,3 +6,7 @@ Cadastrar uma nova pessoa.
 Listar todas as pessoas cadastradas
 '''
 
+import funcoes115
+
+funcoes115.showMenu()
+funcoes115.userEnterOption()
