@@ -1,5 +1,6 @@
 from time import sleep
 from os import system
+import csv
 
 def titulo(msg):
     """
@@ -16,12 +17,43 @@ def showMenu():
     print('2 - Cadastrar nova Pessoa')
     print('3 - Sair do sistema')
 
+
 def execOption1():
     titulo('OPÇÃO 1')
+    try:
+        with open('EX_MUNDO_3\DESAFIO_115\database.csv', newline='') as csvfile:
+            spamreader = csv.reader(csvfile, delimiter=' ', quotechar='|')
+            for row in spamreader:
+                print(row)
+    except FileNotFoundError:
+        with open('EX_MUNDO_3\DESAFIO_115\database.csv', newline='', mode='x') as csvfile:
+            writer = csv.writer(csvfile)
+            writer = writer.writerow(['NOME', 'IDADE'])
+            print('BANCO DE DADOS CRIADO COM SUCESSO...')
 
 
 def execOption2():
     titulo('OPÇÃO 2')
+    nome = str(input('NOME: ')).upper()
+    while True:
+        try:
+            idade = int(input('IDADE: '))
+        except ValueError:
+            print('Digite um número válido...')
+        else:
+            break
+    try:
+        with open('EX_MUNDO_3\DESAFIO_115\database.csv', newline='', mode='a') as csvfile:
+            writer = csv.writer(csvfile)
+            writer.writerow([nome, idade])
+            titulo('NOVO REGISTRO')
+            print()
+    except FileNotFoundError:
+        with open('EX_MUNDO_3\DESAFIO_115\database.csv', newline='', mode='x') as csvfile:
+            writer = csv.writer(csvfile)
+            writer.writerow(['NOME', 'IDADE'])
+            writer.writerow([nome, idade])
+            print('BANCO DE DADOS CRIADO!')
 
 
 def execOption3():
@@ -54,4 +86,5 @@ def userEnterOption():
                     break
                 elif option == 3:
                     execOption3()
-                    break
+                    return False
+                    

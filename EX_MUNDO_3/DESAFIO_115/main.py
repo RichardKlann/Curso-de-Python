@@ -8,5 +8,9 @@ Listar todas as pessoas cadastradas
 
 import funcoes115
 
-funcoes115.showMenu()
-funcoes115.userEnterOption()
+loop = True
+while True:
+    funcoes115.showMenu()
+    loop = funcoes115.userEnterOption()
+    if loop == False:
+        break
