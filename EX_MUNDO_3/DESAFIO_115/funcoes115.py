@@ -22,9 +22,12 @@ def execOption1():
     titulo('OPÇÃO 1')
     try:
         with open('EX_MUNDO_3\DESAFIO_115\database.csv', newline='') as csvfile:
-            spamreader = csv.reader(csvfile, delimiter=' ', quotechar='|')
+            spamreader = csv.reader(csvfile, delimiter=',', quotechar='|')
             for row in spamreader:
-                print(row)
+                print(f'{row[0]:<10}', end='')
+                print(' ' * 15, end='')
+                print(f'{row[1]:>3}')
+
     except FileNotFoundError:
         with open('EX_MUNDO_3\DESAFIO_115\database.csv', newline='', mode='x') as csvfile:
             writer = csv.writer(csvfile)
