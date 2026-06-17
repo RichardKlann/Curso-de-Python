@@ -135,5 +135,32 @@ Letra D
 
 Pergunta 15 - Coloque nos comentários a estrutura de dois objetos: um concreto e outro abstrato.
 Inclua também seus principais atributos, métodos e crie um exemplo de estado para cada um deles.
+'''
+
+#AULA 04 - FUNDAMENTOS
+'''
+OBJETOS SÃO VARIÁVEIS EVOLUÍDAS.
+
+OBJETOS SÃO VARIÁVEIS QUE ALÉM DE GUARDAR DADOS, PODEM FAZER COISAS COM ESSES DADOS
+
+
+#DECLARAÇÃO DA CLASSE
+class MinhaClasse:
+    #Atributos
+    '
+
+    '
+    #Métodos
+    '
+
+    '
+#Declaração dos objetos
+obj = MinhaClasse()
+
+
+Instanciação
+Método Construtor
+def __init__(self)
+
 
 '''
