@@ -162,5 +162,10 @@ Instanciação
 Método Construtor
 def __init__(self)
 
+'''
 
+#AULA SOBRE A RICH (EMOJI)
+'''
+Comando para conseguir encontrar os emojis no terminal
+python -m rich.emoji
 '''
