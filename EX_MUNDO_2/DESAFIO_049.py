@@ -6,4 +6,4 @@ usando o laço for.
 numero = int(input('Digite um número e tenha a sua tabuada: '))
 
 for c in range (1, 11, 1):
-    print ('{} x {:2} = {}'.format(numero, c, numero*c))
+    print (f'{numero} x {c:2} = {numero*c}')
